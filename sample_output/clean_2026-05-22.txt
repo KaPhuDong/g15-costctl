@@ -1,0 +1,13 @@
+$ ./costctl.py clean --tag purpose=practice
+Resources matching purpose=practice:
+  EC2     i-646ed843068edea95
+  volume  vol-e0a53a61721f89384
+
+(dry-run - pass --apply to terminate 2 resource(s))
+
+$ ./costctl.py clean --tag purpose=practice --apply
+Resources matching purpose=practice:
+  EC2     i-646ed843068edea95
+  volume  vol-e0a53a61721f89384
+Terminated 1 EC2 instance(s): ['i-646ed843068edea95']
+Deleted volume vol-e0a53a61721f89384

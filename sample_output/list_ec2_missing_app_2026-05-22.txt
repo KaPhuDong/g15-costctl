@@ -1,0 +1,5 @@
+$ ./costctl.py list ec2 --missing-tag Application
+EC2 !Application - 2 found:
+------------------------------------------------------------------------------
+  i-ef865bb83c201ef73       t3.micro       running       CostCenter=G15 Environment=dev Owner=pvkhanhtruong1810@gmail.com
+  i-646ed843068edea95       t3.nano        running       purpose=practice

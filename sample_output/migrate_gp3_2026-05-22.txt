@@ -1,0 +1,25 @@
+$ ./costctl.py migrate-gp3
+gp2 volumes (price delta $0.020/GB-month):
+------------------------------------------------------------------------------
+  vol-bd4ac326143808788      8GB  attached=i-bb01b4fd3a1be5ed1    $0.16/mo savings
+  vol-0eca21a4dcf624cc8      8GB  attached=i-48e85163f39c1d24c    $0.16/mo savings
+  vol-48d376f3ae3b720ad      8GB  attached=i-ef865bb83c201ef73    $0.16/mo savings
+  vol-b0b9a30f9bbbc837b    100GB  attached=(none)                  $2.00/mo savings
+------------------------------------------------------------------------------
+
+  Total potential savings: $2.48/mo
+
+(dry-run - pass --apply --volume-id <id> to migrate one, or --apply to migrate ALL)
+
+$ ./costctl.py migrate-gp3 --apply --volume-id vol-b0b9a30f9bbbc837b
+gp2 volumes (price delta $0.020/GB-month):
+------------------------------------------------------------------------------
+  vol-b0b9a30f9bbbc837b    100GB  attached=(none)                  $2.00/mo savings
+------------------------------------------------------------------------------
+
+  Total potential savings: $2.00/mo
+
+  → modify_volume issued for vol-b0b9a30f9bbbc837b (gp3, 3000 IOPS, 125 MiB/s)
+
+Volume(s) entering 'modifying' → 'optimizing' state. App stays online.
+Use `costctl list volume` after ~30 minutes to confirm 'in-use' + gp3.

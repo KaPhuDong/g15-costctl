@@ -1,0 +1,5 @@
+$ ./costctl.py terminate s3 --id untagged-scratch --force
+Deleted S3 bucket untagged-scratch
+
+$ ./costctl.py terminate ec2 --id i-doesnotexist --force
+AWS error [InvalidInstanceID.NotFound]: The instance ID 'i-doesnotexist' does not exist

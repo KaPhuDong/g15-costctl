@@ -1,0 +1,7 @@
+$ ./costctl.py list ec2
+EC2 - 4 found:
+------------------------------------------------------------------------------
+  i-bb01b4fd3a1be5ed1       t3.micro       running       Application=BuildForce CostCenter=G15 Environment=dev Owner=pvkhanhtruong1810@gmail.com
+  i-48e85163f39c1d24c       t3.small       running       Application=BuildForce CostCenter=G15 Environment=dev Owner=pvkhanhtruong1810@gmail.com
+  i-ef865bb83c201ef73       t3.micro       running       CostCenter=G15 Environment=dev Owner=pvkhanhtruong1810@gmail.com
+  i-646ed843068edea95       t3.nano        running       purpose=practice

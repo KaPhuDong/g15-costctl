@@ -1,0 +1,9 @@
+$ ./costctl.py list volume
+VOLUME - 6 found:
+------------------------------------------------------------------------------
+  vol-bd4ac326143808788     gp2-8GB        in-use
+  vol-0eca21a4dcf624cc8     gp2-8GB        in-use
+  vol-48d376f3ae3b720ad     gp2-8GB        in-use
+  vol-767b02e9d0c61612c     gp2-8GB        in-use
+  vol-b0b9a30f9bbbc837b     gp2-100GB      available     Application=BuildForce purpose=data
+  vol-e0a53a61721f89384     gp3-50GB       available     purpose=practice

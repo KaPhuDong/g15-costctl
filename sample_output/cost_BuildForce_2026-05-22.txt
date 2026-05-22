@@ -1,0 +1,11 @@
+$ ./costctl.py cost --tag Application=BuildForce --days 7
+Cost for Application=BuildForce over last 7 days (2026-05-15 → 2026-05-22):
+------------------------------------------------------------
+  Amazon Elastic Compute Cloud - Compute        $   18.34
+  Amazon DocumentDB                             $    9.72
+  Amazon ElastiCache                            $    4.15
+  Amazon CloudFront                             $    1.08
+  Amazon Simple Storage Service                 $    0.43
+  AWS Lambda                                    $    0.06
+------------------------------------------------------------
+  TOTAL                                         $   33.78

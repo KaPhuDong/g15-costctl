@@ -1,0 +1,6 @@
+$ ./costctl.py list s3
+S3 - 3 found:
+------------------------------------------------------------------------------
+  buildforce-assets         bucket         active        Application=BuildForce CostCenter=G15 Environment=dev Owner=pvkhanhtruong1810@gmail.com
+  buildforce-cv-uploads     bucket         active        Application=BuildForce CostCenter=G15 Environment=dev Owner=pvkhanhtruong1810@gmail.com
+  g15-untagged-scratch      bucket         active
